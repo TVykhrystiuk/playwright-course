@@ -1,0 +1,12 @@
+name : Playwright Tests
+on: 
+  push:
+    branches: [main]
+jobs:
+  playwrighttests: # any name
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Say hello
+        run: echo Hello
